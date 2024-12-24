@@ -41,22 +41,15 @@ const socialMediaLinks = [
 
 const Social: React.FC = () => {
   return (
-    <div className="flex gap-4">
-      <ul>
-        {socialMediaLinks.map(({ name, url, icon }) => (
-          <li key={name}>
-            <a
-              href={url}
-              title={name}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={icon} alt={name} />
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className="flex gap-4 items-center">
+      {socialMediaLinks.map(({ name, url, icon }) => (
+        <li key={name}>
+          <a href={url} title={name} target="_blank" rel="noopener noreferrer">
+            <img src={icon} alt={name} />
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 };
 
