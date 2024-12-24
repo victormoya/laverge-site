@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 /* prettier-ignore */
 
 declare module '*.svg' {

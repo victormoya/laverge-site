@@ -34,7 +34,7 @@ const socialMediaLinks = [
   },
   {
     name: 'Apple Music',
-    url: 'https://itunes.apple.com/us/album/handle-this/1299818828',
+    url: 'https://music.apple.com/us/artist/laverge/1299819253',
     icon: apple
   }
 ];

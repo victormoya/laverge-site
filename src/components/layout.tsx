@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <body className="container flex mx-auto px-4 flex-col min-h-screen">
+    <div className="container flex mx-auto px-4 flex-col min-h-screen">
       <header className="mt-4">
         <Menu />
       </header>
@@ -18,7 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Social />
         <p>&copy; 2025 Carcosa Records</p>
       </footer>
-    </body>
+    </div>
   );
 };
 
