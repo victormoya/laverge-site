@@ -15,6 +15,7 @@ const IndexPage: React.FC<PageProps> = () => {
           placeholder="blurred"
           layout="fullWidth"
         />
+
         <div className="relative flex items-center justify-center h-full">
           <EnterSiteButton />
         </div>
