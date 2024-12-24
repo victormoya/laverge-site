@@ -5,23 +5,11 @@ const Menu: React.FC = () => {
   const items = [
     {
       label: 'Home',
-      link: '/'
+      link: '/home'
     },
     {
       label: 'Tour',
       link: '/tour'
-    },
-    {
-      label: 'Music',
-      link: '/music'
-    },
-    {
-      label: 'Video',
-      link: '/video'
-    },
-    {
-      label: 'About',
-      link: '/about'
     },
     {
       label: 'Contact',
