@@ -18,10 +18,10 @@ const Menu: React.FC = () => {
   ];
 
   return (
-    <nav className="menu">
-      <ul className="menu-list">
+    <nav>
+      <ul className="flex gap-4 uppercase text-xl font-bold font-serif">
         {items.map(({ label, link }) => (
-          <li className="menu-item" key="label">
+          <li key="label">
             <Link to={link}>{label}</Link>
           </li>
         ))}

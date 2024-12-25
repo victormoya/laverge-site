@@ -19,6 +19,14 @@ const config: GatsbyConfig = {
         icon: './src/images/album-cover.jpg'
       }
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: './static/assets/'
+        }
+      }
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -28,6 +36,22 @@ const config: GatsbyConfig = {
         path: './src/images/'
       },
       __key: 'images'
+    },
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [
+          `https://fonts.googleapis.com`,
+          `https://fonts.gstatic.com crossorigin`
+        ],
+        web: [
+          {
+            name: `EB Garamond`,
+            file: `https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap`
+          }
+        ]
+      }
     }
   ]
 };

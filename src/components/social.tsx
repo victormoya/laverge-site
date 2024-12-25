@@ -1,51 +1,45 @@
 import React from 'react';
-import instagram from '../../static/media/icons/instagram.svg';
-import facebook from '../../static/media/icons/facebook.svg';
-import youtube from '../../static/media/icons/youtube.svg';
-import spotify from '../../static/media/icons/spotify.svg';
-import bandcamp from '../../static/media/icons/bandcamp.svg';
-import apple from '../../static/media/icons/apple.svg';
+import { ReactComponent as FacebookIcon } from '../../static/assets/facebook.svg';
+import { ReactComponent as YouTubeIcon } from '../../static/assets/youtube.svg';
+import { ReactComponent as SpotifyIcon } from '../../static/assets/spotify.svg';
+import { ReactComponent as BandcampIcon } from '../../static/assets/bandcamp.svg';
+import { ReactComponent as AppleIcon } from '../../static/assets/apple.svg';
 
 const socialMediaLinks = [
   {
-    name: 'Instagram',
-    url: 'https://www.instagram.com/laverge_band/',
-    icon: instagram
-  },
-  {
     name: 'Facebook',
     url: 'https://www.facebook.com/Lavergeband/',
-    icon: facebook
+    icon: FacebookIcon
   },
   {
     name: 'YouTube',
     url: 'https://www.youtube.com/channel/UCoZ9-g-GvPzX52xxbkA6mmA',
-    icon: youtube
+    icon: YouTubeIcon
   },
   {
     name: 'Spotify',
     url: 'https://open.spotify.com/artist/7GcUN4O1EbffUOAij7xzND',
-    icon: spotify
+    icon: SpotifyIcon
   },
   {
     name: 'Bandcamp',
     url: 'https://laverge.bandcamp.com/',
-    icon: bandcamp
+    icon: BandcampIcon
   },
   {
     name: 'Apple Music',
     url: 'https://music.apple.com/us/artist/laverge/1299819253',
-    icon: apple
+    icon: AppleIcon
   }
 ];
 
 const Social: React.FC = () => {
   return (
     <ul className="flex gap-4 items-center">
-      {socialMediaLinks.map(({ name, url, icon }) => (
+      {socialMediaLinks.map(({ name, url, icon: Icon }) => (
         <li key={name}>
           <a href={url} title={name} target="_blank" rel="noopener noreferrer">
-            <img src={icon} alt={name} />
+            <Icon />
           </a>
         </li>
       ))}
