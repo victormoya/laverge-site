@@ -1,9 +1,9 @@
 import React from 'react';
-import { ReactComponent as FacebookIcon } from '../../static/assets/facebook.svg';
-import { ReactComponent as YouTubeIcon } from '../../static/assets/youtube.svg';
-import { ReactComponent as SpotifyIcon } from '../../static/assets/spotify.svg';
-import { ReactComponent as BandcampIcon } from '../../static/assets/bandcamp.svg';
-import { ReactComponent as AppleIcon } from '../../static/assets/apple.svg';
+import { ReactComponent as FacebookIcon } from '../assets/facebook.svg';
+import { ReactComponent as YouTubeIcon } from '../assets/youtube.svg';
+import { ReactComponent as SpotifyIcon } from '../assets/spotify.svg';
+import { ReactComponent as BandcampIcon } from '../assets/bandcamp.svg';
+import { ReactComponent as AppleIcon } from '../assets/apple.svg';
 
 const socialMediaLinks = [
   {
