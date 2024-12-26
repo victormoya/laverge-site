@@ -5,3 +5,7 @@
 html {
   @apply text-primary;
 }
+
+body {
+  font-family: 'EB Garamond', serif;
+}

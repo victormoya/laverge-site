@@ -19,7 +19,7 @@ const Menu: React.FC = () => {
 
   return (
     <nav>
-      <ul className="flex gap-4 uppercase text-3xl font-bold font-serif">
+      <ul className="flex gap-4 uppercase text-3xl font-bold">
         {items.map(({ label, link }) => (
           <li key="label">
             <Link to={link}>{label}</Link>
