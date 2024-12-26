@@ -20,12 +20,7 @@ const config: GatsbyConfig = {
       }
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: './src/assets/'
-        }
-      }
+      resolve: 'gatsby-plugin-svgr'
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
