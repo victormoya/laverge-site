@@ -14,10 +14,11 @@ const ContactPage: React.FC = () => {
         <br />
         <a href="tel:+34670763759">+34 670 763 759</a>
       </p>
-
       {/* 💡 Add a contact form to send emails to lavergeband@gmail.com */}
     </Layout>
   );
 };
+
+export const Head = () => <title>Contact – LAVERGE</title>;
 
 export default ContactPage;

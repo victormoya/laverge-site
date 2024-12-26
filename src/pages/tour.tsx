@@ -14,35 +14,26 @@ const TourPage = () => {
 
   return (
     <Layout>
-      <h1 className="text-4xl font-semibold">Upcoming live shows</h1>
-      <div className="mt-10 border-t border-b py-4">
-        <a
-          href="https://www.songkick.com/artists/8348243"
-          className="songkick-widget"
-          data-theme="light"
-          data-track-button="on"
-          data-detect-style="on"
-          data-locale="en"
-          data-other-artists="on"
-          data-share-button="on"
-          data-country-filter="on"
-          data-rsvp="on"
-          data-request-show="on"
-          data-past-events="off"
-          data-past-events-offtour="off"
-          data-remind-me="off"
-        ></a>
-      </div>
+      <a
+        href="https://www.songkick.com/artists/8348243"
+        className="songkick-widget"
+        data-theme="light"
+        data-track-button="on"
+        data-detect-style="on"
+        data-locale="en"
+        data-other-artists="on"
+        data-share-button="on"
+        data-country-filter="on"
+        data-rsvp="on"
+        data-request-show="on"
+        data-past-events="on"
+        data-past-events-offtour="on"
+        data-remind-me="on"
+      />
     </Layout>
   );
 };
 
-export function Head() {
-  return (
-    <>
-      <title>Tour – LAVERGE</title>
-    </>
-  );
-}
+export const Head = () => <title>Tour – LAVERGE</title>;
 
 export default TourPage;
