@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Menu />
         <Social />
       </header>
-      <main className="flex-grow mt-10">{children}</main>
+      <main className="flex-grow text-center mt-20">{children}</main>
       <footer className="mt-auto p-6 space-y-4 flex flex-col items-center">
         <Social />
         <p>&copy; 2025 Carcosa Records</p>
