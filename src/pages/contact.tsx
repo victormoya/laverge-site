@@ -4,22 +4,20 @@ import Layout from '../components/layout';
 const ContactPage: React.FC = () => {
   return (
     <Layout>
-      <h1>Contact Us</h1>
-      <form>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+      <div className="text-center mt-16">
+        <h1 className="text-4xl font-semibold">Contact</h1>
+        <p className="mt-4 text-2xl leading-relaxed">
+          Management & Booking
+          <br />
+          Ignacio – Carcosa Records
+          <br />
+          <a href="mailto:info@carcosarecords.com">info@carcosarecords.com</a>
+          <br />
+          <a href="tel:+34670763759">+34 670 763 759</a>
+        </p>
+
+        {/* 💡 Add a contact form to send emails to lavergeband@gmail.com */}
+      </div>
     </Layout>
   );
 };
