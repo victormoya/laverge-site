@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section } from '../components';
+import { Link, Section } from '../components';
 
 export const ContactSection: React.FC = () => {
   return (
@@ -9,18 +9,20 @@ export const ContactSection: React.FC = () => {
         <br />
         Ignacio – Carcosa Records
         <br />
-        <a
+        <Link
           href="mailto:info@carcosarecords.com"
-          className="hover:text-gray-500"
+          className="hover:underline hover:text-blue-700"
         >
           info@carcosarecords.com
-        </a>
+        </Link>
         <br />
-        <a href="tel:+34670763759" className="hover:text-gray-500">
+        <Link
+          href="tel:+34670763759"
+          className="hover:underline hover:text-blue-700"
+        >
           +34 670 763 759
-        </a>
+        </Link>
       </p>
-      {/* 💡 Add a contact form to send emails to lavergeband@gmail.com */}
     </Section>
   );
 };

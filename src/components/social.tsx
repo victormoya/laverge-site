@@ -4,6 +4,7 @@ import { ReactComponent as YouTubeIcon } from '../icons/youtube.svg';
 import { ReactComponent as SpotifyIcon } from '../icons/spotify.svg';
 import { ReactComponent as BandcampIcon } from '../icons/bandcamp.svg';
 import { ReactComponent as AppleIcon } from '../icons/apple.svg';
+import { Link } from './link';
 
 const socialMediaLinks = [
   {
@@ -38,9 +39,9 @@ export const Social: React.FC = () => {
     <ul className="flex gap-4 items-center">
       {socialMediaLinks.map(({ name, url, icon: Icon }) => (
         <li key={name}>
-          <a href={url} title={name} target="_blank" rel="noopener noreferrer">
+          <Link href={url} className="hover:text-red-700">
             <Icon />
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
