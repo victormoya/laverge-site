@@ -17,12 +17,13 @@ export const Link: FC<LinkProps> = ({
   rel
 }) => {
   const isExternal = href.startsWith('http') || href.startsWith('mailto');
+  const hoverStyles = 'hover:underline hover:text-red-700';
 
   if (isExternal) {
     return (
       <a
         href={href}
-        className={className}
+        className={className || hoverStyles}
         target={target || '_blank'}
         rel={rel || 'noopener noreferrer'}
       >
@@ -32,7 +33,7 @@ export const Link: FC<LinkProps> = ({
   }
 
   return (
-    <RouterLink to={href} className={className}>
+    <RouterLink to={href} className={className || hoverStyles}>
       {children}
     </RouterLink>
   );
