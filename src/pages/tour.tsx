@@ -4,7 +4,6 @@ import Layout from '../components/layout';
 const TourPage = () => {
   React.useEffect(() => {
     const script = document.createElement('script');
-    // script.src = '//widget-app.songkick.com/injector/8348243';
     script.src = 'https://widgetv3.bandsintown.com/main.min.js';
     script.async = true;
     document.body.appendChild(script);
