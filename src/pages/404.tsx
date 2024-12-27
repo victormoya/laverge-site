@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Link, HeadFC, PageProps } from 'gatsby';
-import Layout from '../components/layout';
+import Social from '../components/social';
 
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
-    <Layout>
+    <main>
       <h1 className="text-4xl font-semibold">Page not found</h1>
       <p className="text-2xl leading-relaxed mt-4">
         Sorry 😔, we couldn’t find what you were looking for.
@@ -14,10 +14,14 @@ const NotFoundPage: React.FC<PageProps> = () => {
         </Link>
         .
       </p>
-    </Layout>
+      <footer className="mt-auto p-6 space-y-4 flex flex-col items-center">
+        <Social />
+        <p>&copy; 2025 Carcosa Records</p>
+      </footer>
+    </main>
   );
 };
 
-export const Head = () => <title>Not found – LAVERGE</title>;
+export const Head: HeadFC = () => <title>Not found – LAVERGE</title>;
 
 export default NotFoundPage;

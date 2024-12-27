@@ -1,10 +1,9 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Section from '../components/section';
 
-const ContactPage: React.FC = () => {
+const ContactSection: React.FC = () => {
   return (
-    <Layout>
-      <h1 className="text-4xl font-semibold">Contact</h1>
+    <Section anchor="contact" title="Contact">
       <p className="mt-4 text-2xl leading-relaxed">
         Management & Booking
         <br />
@@ -15,10 +14,8 @@ const ContactPage: React.FC = () => {
         <a href="tel:+34670763759">+34 670 763 759</a>
       </p>
       {/* 💡 Add a contact form to send emails to lavergeband@gmail.com */}
-    </Layout>
+    </Section>
   );
 };
 
-export const Head = () => <title>Contact – LAVERGE</title>;
-
-export default ContactPage;
+export default ContactSection;

@@ -1,7 +1,7 @@
 import * as React from 'react';
-import Layout from '../components/layout';
+import Section from '../components/section';
 
-const TourPage = () => {
+const TourSection = () => {
   React.useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://widgetv3.bandsintown.com/main.min.js';
@@ -25,7 +25,7 @@ const TourPage = () => {
   };
 
   return (
-    <Layout>
+    <Section anchor="tour" title="Upcoming Shows">
       <a
         className="bit-widget-initializer"
         data-artist-name="id_11169394"
@@ -113,10 +113,8 @@ const TourPage = () => {
         data-bit-logo-position="hidden"
         data-bit-logo-color={colors.gold}
       />
-    </Layout>
+    </Section>
   );
 };
 
-export const Head = () => <title>Tour – LAVERGE</title>;
-
-export default TourPage;
+export default TourSection;
