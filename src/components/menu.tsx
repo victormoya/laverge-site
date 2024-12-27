@@ -1,42 +1,37 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link } from './link';
 
 const MENU_ITEMS = [
   {
-    label: 'Home',
-    path: '/home/'
-  },
-  {
     label: 'Tour',
-    path: '/tour/'
+    path: '#tour'
   },
   {
     label: 'Contact',
-    path: '/contact/'
+    path: '#contact'
+  },
+  {
+    label: 'Shop',
+    path: 'https://carcosarecords.bigcartel.com/',
+    isLinkout: true
   }
 ];
 
-const Menu: React.FC = () => {
-  const [activePath, setActivePath] = React.useState<string>('/home/');
-
-  React.useEffect(() => {
-    setActivePath(window.location.pathname);
-  }, []);
-
+export const Menu: React.FC = () => {
   return (
     <nav>
-      <ul className="flex gap-4 uppercase text-2xl md:text-3xl font-bold">
+      <ul className="flex gap-4 flex-wrap">
         {MENU_ITEMS.map(({ label, path }) => (
-          <li
-            key={path}
-            className={activePath === path ? 'underline' : undefined}
-          >
-            <Link to={path}>{label}</Link>
+          <li key={path}>
+            <Link
+              href={path}
+              className="uppercase text-2xl md:text-3xl font-bold hover:underline hover:text-red-700"
+            >
+              {label}
+            </Link>
           </li>
         ))}
       </ul>
     </nav>
   );
 };
-
-export default Menu;
