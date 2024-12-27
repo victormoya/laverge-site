@@ -1,15 +1,13 @@
 import * as React from 'react';
 import { type HeadFC, type PageProps } from 'gatsby';
 
-import { Menu, Video, Footer } from '../components';
-import { TourSection, ContactSection } from '../sections';
+import { Video } from '../components';
+import { Header, TourSection, ContactSection, Footer } from '../sections';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <div className="container flex mx-auto px-4 flex-col min-h-screen">
-      <header className="mt-10">
-        <Menu />
-      </header>
+      <Header />
       <main className="flex-grow text-center mt-20">
         <Video videoId="aysl7h5wQow" title="Showdown" />
         <TourSection />

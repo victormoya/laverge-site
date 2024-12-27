@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link, HeadFC, PageProps } from 'gatsby';
-import { Footer } from '../components';
+import { Footer } from '../sections';
 
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
