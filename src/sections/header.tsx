@@ -1,11 +1,8 @@
 import React from 'react';
-import { Menu, Social } from '../components';
+import { Menu } from '../components';
 
 export const Header: React.FC = () => (
-  <header className="mt-10 flex justify-center md:justify-between items-center">
+  <header className="mt-10">
     <Menu />
-    <div className="hidden md:block">
-      <Social />
-    </div>
   </header>
 );
