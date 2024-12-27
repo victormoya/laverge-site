@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const MENU_ITEMS = [
-  {
-    label: 'Home',
-    path: '/'
-  },
+  // {
+  //   label: 'Home',
+  //   path: '/'
+  // },
   {
     label: 'Tour',
     path: '/#tour'
@@ -21,18 +21,25 @@ const MENU_ITEMS = [
   }
 ];
 
-const Menu: React.FC = () => {
+export const Menu: React.FC = () => {
   return (
     <nav>
-      <ul className="flex gap-4 uppercase text-2xl md:text-3xl font-bold">
+      <ul className="flex gap-4 flex-wrap">
         {MENU_ITEMS.map(({ label, path, isLinkout }) => (
-          <li key={path}>
+          <li key={path} className="uppercase text-2xl md:text-3xl font-bold">
             {isLinkout ? (
-              <a href={path} target="_blank" rel="noopener noreferrer">
+              <a
+                href={path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
                 {label}
               </a>
             ) : (
-              <Link to={path}>{label}</Link>
+              <Link to={path} className="hover:underline">
+                {label}
+              </Link>
             )}
           </li>
         ))}
@@ -40,5 +47,3 @@ const Menu: React.FC = () => {
     </nav>
   );
 };
-
-export default Menu;

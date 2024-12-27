@@ -1,11 +1,11 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
-interface BackgroundImageProps {
+interface BackgroundProps {
   imageSrc: string;
 }
 
-const BackgroundImage: React.FC<BackgroundImageProps> = ({ imageSrc }) => {
+export const Background: React.FC<BackgroundProps> = ({ imageSrc }) => {
   return (
     <main>
       <div className="relative h-screen w-screen">
@@ -20,5 +20,3 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({ imageSrc }) => {
     </main>
   );
 };
-
-export default BackgroundImage;

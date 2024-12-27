@@ -33,7 +33,7 @@ const socialMediaLinks = [
   }
 ];
 
-const Social: React.FC = () => {
+export const Social: React.FC = () => {
   return (
     <ul className="flex gap-4 items-center">
       {socialMediaLinks.map(({ name, url, icon: Icon }) => (
@@ -46,5 +46,3 @@ const Social: React.FC = () => {
     </ul>
   );
 };
-
-export default Social;

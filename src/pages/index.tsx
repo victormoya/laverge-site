@@ -1,10 +1,8 @@
 import * as React from 'react';
 import { type HeadFC, type PageProps } from 'gatsby';
 
-import Menu from '../components/menu';
-import Video from '../components/video';
-import { Tour, Contact } from '../sections';
-import Social from '../components/social';
+import { Menu, Video, Footer } from '../components';
+import { TourSection, ContactSection } from '../sections';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -14,13 +12,10 @@ const IndexPage: React.FC<PageProps> = () => {
       </header>
       <main className="flex-grow text-center mt-20">
         <Video videoId="aysl7h5wQow" title="Showdown" />
-        <Tour />
-        <Contact />
+        <TourSection />
+        <ContactSection />
       </main>
-      <footer className="mt-auto p-6 space-y-4 flex flex-col items-center">
-        <Social />
-        <p>&copy; 2025 Carcosa Records</p>
-      </footer>
+      <Footer />
     </div>
   );
 };

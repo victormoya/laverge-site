@@ -1,7 +1,7 @@
 import * as React from 'react';
-import Section from '../components/section';
+import { Section } from '../components';
 
-const TourSection = () => {
+export const TourSection = () => {
   React.useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://widgetv3.bandsintown.com/main.min.js';
@@ -116,5 +116,3 @@ const TourSection = () => {
     </Section>
   );
 };
-
-export default TourSection;
