@@ -16,7 +16,7 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: './src/images/album-cover.jpg'
+        icon: './src/images/favicon.jpg'
       }
     },
     {
