@@ -7,7 +7,10 @@ export const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-y-4 justify-between items-center">
           <Social />
-          <p>&copy; {new Date().getFullYear()} Laverge. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Carcosa Records. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>

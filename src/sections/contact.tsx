@@ -7,18 +7,10 @@ export const ContactSection: React.FC = () => {
       <div className="mt-4 text-2xl flex flex-col gap-4">
         <span>Management & Booking</span>
         <span>Ignacio – Carcosa Records</span>
-        <Link
-          href="mailto:info@carcosarecords.com"
-          className="hover:underline hover:text-red-700"
-        >
+        <Link href="mailto:info@carcosarecords.com">
           info@carcosarecords.com
         </Link>
-        <Link
-          href="tel:+34670763759"
-          className="hover:underline hover:text-red-700"
-        >
-          +34 670 763 759
-        </Link>
+        <Link href="tel:+34670763759">+34 670 763 759</Link>
       </div>
     </Section>
   );

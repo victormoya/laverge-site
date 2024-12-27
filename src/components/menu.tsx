@@ -20,12 +20,12 @@ const MENU_ITEMS = [
 export const Menu: React.FC = () => {
   return (
     <nav>
-      <ul className="flex gap-4 flex-wrap">
+      <ul className="flex gap-4">
         {MENU_ITEMS.map(({ label, path }) => (
           <li key={path}>
             <Link
               href={path}
-              className="uppercase text-2xl md:text-3xl font-bold hover:underline hover:text-red-700"
+              className="uppercase text-2xl md:text-3xl font-bold"
             >
               {label}
             </Link>
