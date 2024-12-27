@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { type HeadFC, type PageProps } from 'gatsby';
 
-import { Header, Video, Footer } from '../components';
-import { TourSection, ContactSection } from '../sections';
+import { Video } from '../components';
+import { Header, TourSection, ContactSection, Footer } from '../sections';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (

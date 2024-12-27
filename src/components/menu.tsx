@@ -22,13 +22,8 @@ export const Menu: React.FC = () => {
     <nav>
       <ul className="flex gap-4">
         {MENU_ITEMS.map(({ label, path }) => (
-          <li key={path}>
-            <Link
-              href={path}
-              className="uppercase text-2xl md:text-3xl font-bold"
-            >
-              {label}
-            </Link>
+          <li key={path} className="uppercase text-2xl md:text-3xl font-bold">
+            <Link href={path}>{label}</Link>
           </li>
         ))}
       </ul>
