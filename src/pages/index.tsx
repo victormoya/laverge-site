@@ -8,7 +8,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <div className="container flex mx-auto px-4 flex-col min-h-screen">
       <Header />
-      <main className="flex-grow text-center mt-20">
+      <main className="flex-grow text-center mt-10">
         <Video videoId="aysl7h5wQow" title="Showdown" />
         <TourSection />
         <ContactSection />
