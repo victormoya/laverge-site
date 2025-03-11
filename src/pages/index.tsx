@@ -22,6 +22,7 @@ export default IndexPage;
 
 export const Head: HeadFC = () => (
   <>
+    <html lang="en" />
     <title>LAVERGE</title>
     <meta
       name="description"

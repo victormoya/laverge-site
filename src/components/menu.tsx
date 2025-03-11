@@ -12,17 +12,20 @@ const MENU_ITEMS = [
   },
   {
     label: 'Shop',
-    path: 'https://carcosarecords.bigcartel.com/',
-    isLinkout: true
+    path: 'https://carcosarecords.bigcartel.com/'
   }
 ];
 
-export const Menu: React.FC = () => {
+interface MenuProps {
+  className?: string;
+}
+
+export const Menu: React.FC<MenuProps> = ({ className }) => {
   return (
     <nav>
-      <ul className="flex gap-4">
+      <ul className={className || 'flex gap-4 mt-10'}>
         {MENU_ITEMS.map(({ label, path }) => (
-          <li key={path} className="uppercase text-2xl md:text-3xl font-bold">
+          <li key={path} className="uppercase text-4xl md:text-3xl font-bold">
             <Link href={path}>{label}</Link>
           </li>
         ))}

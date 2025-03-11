@@ -1,8 +1,8 @@
 import React from 'react';
-import { Menu } from '../components';
+import { Navigation } from '../components/navigation';
 
 export const Header: React.FC = () => (
-  <header className="mt-10">
-    <Menu />
+  <header className="mt-20">
+    <Navigation />
   </header>
 );
