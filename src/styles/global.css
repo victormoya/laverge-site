@@ -10,13 +10,13 @@ body {
   font-family: 'EB Garamond', serif;
 }
 
-.bit-button:hover {
+.bit-widget .bit-button:hover {
   @apply text-red-700 !important;
   @apply border-red-700 !important;
   opacity: 1 !important;
 }
 
-.bit-play-my-city-cta:hover {
+.bit-widget .bit-play-my-city-cta:hover {
   @apply text-red-700 !important;
   @apply border-red-700 !important;
   opacity: 1 !important;
