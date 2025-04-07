@@ -10,7 +10,7 @@ const IndexPage: React.FC<PageProps> = () => {
     <div className="container flex mx-auto px-4 flex-col min-h-screen overflow-hidden">
       <Header />
       <main className="flex-grow text-center mt-10">
-        <Video videoId="ukPgCvHfAmg" title="Showdown" />
+        <Video videoId="aysl7h5wQow" title="Showdown" />
         <TourSection />
         <StaticImage
           src="../images/band.png"
