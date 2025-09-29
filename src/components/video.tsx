@@ -16,8 +16,9 @@ export const Video: React.FC<VideoProps> = ({
       <iframe
         src={`https://www.youtube.com/embed/${videoId}`}
         title={title}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
+        referrerPolicy="strict-origin-when-cross-origin"
         className="w-full h-full"
       />
     </div>
